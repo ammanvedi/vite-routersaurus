@@ -1,5 +1,8 @@
 {
   "extends": "tsconfig/react-app.json",
   "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "compilerOptions": {
+    "typeRoots": ["./typings", "node_modules/@types"]
+  },
   "exclude": ["node_modules", "vite.config.mts"]
 }

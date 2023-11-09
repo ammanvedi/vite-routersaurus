@@ -1,21 +1,25 @@
 {
   "name": "@routersaurus/plugin-react-router",
-  "version": "1.0.0",
+  "version": "0.4.16",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "dependencies": {
-    "typescript": "5.2.2",
-    "@routersaurus/types": "*"
+    "typescript": "5.2.2"
   },
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts"
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "publish:package": "yarn publish --new-version `node -e \"console.log(require('../../package.json').version);\"` --access public --no-git-tag-version --non-interactive "
   },
   "peerDependencies": {
     "react": "18",
     "react-router": "6"
   },
   "devDependencies": {
+    "@routersaurus/types": "*",
     "react": "18",
     "react-router": "6",
     "tsup": "^7.2.0"

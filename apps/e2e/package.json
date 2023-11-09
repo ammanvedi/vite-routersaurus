@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "cypress:open": "cypress open",
-    "test": "cypress run && npx pm2 delete E2ESERVE"
+    "cypress:open": "cypress open --e2e -b chrome -p 8009",
+    "test": "cypress run; npx pm2 delete all"
   },
   "dependencies": {
     "e2e-app": "*"

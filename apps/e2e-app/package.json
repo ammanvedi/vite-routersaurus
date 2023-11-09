@@ -5,13 +5,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve-build": "npx pm2 --name E2ESERVE start npx -- http-server ./dist -p 8008"
+    "serve-build": "npx pm2 -l log.txt --name E2ESERVE start npx -- http-server ./dist -p 8008"
   },
   "dependencies": {
     "@routersaurus/dom": "*",
     "@routersaurus/plugin-react-router": "*",
     "@routersaurus/plugin-vite": "*",
     "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-router-dom": "^6.18.0",
     "styled-components": "^6.1.1",
     "vite": "^4.5.0"

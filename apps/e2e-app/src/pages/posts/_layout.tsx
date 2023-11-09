@@ -3,7 +3,7 @@ import React from 'react'
 const Layout = () => {
   return (
     <>
-      <h1>Root Layout</h1>
+      <h2>Nested Layout</h2>
       <Outlet />
     </>
   );

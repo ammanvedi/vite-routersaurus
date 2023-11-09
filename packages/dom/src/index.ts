@@ -1,5 +1,9 @@
 import {ClientRoutingTree, ClientClientRoutingMap, StartViewTransition} from "@routersaurus/types";
 
+export {
+    type PageMetaData, type PageMetaDataProps
+} from '@routersaurus/types'
+
 
 /**
  * The plugin-vite package will wait for the import of this module and construct the implementation
@@ -11,4 +15,4 @@ export const routes = {} as ClientRoutingTree
 
 export const routesMap = {} as ClientClientRoutingMap
 
-export const startViewTransition = (() => {}) as StartViewTransition
+export const startViewTransition = (() => {}) as unknown as StartViewTransition

@@ -12,8 +12,15 @@
     "e2e#test": {
       "dependsOn": ["e2e-app#serve-build"]
     },
+    "e2e#cypress:open": {
+      "dependsOn": ["e2e-app#serve-build"]
+    },
+    "publish:package": {
+      "dependsOn": ["^build", "e2e#test"]
+    },
     "lint": {},
     "dev": {
+      "dependsOn": ["^build"],
       "cache": false,
       "persistent": true
     }

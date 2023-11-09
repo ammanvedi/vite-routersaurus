@@ -5,7 +5,7 @@ export interface PageMetaData {
 }
 
 export interface PageMetaDataProps {
-    metadate: PageMetaData
+    metadata?: PageMetaData
 }
 
 export interface ClientRoutingConfigurationDirectoryNode {
@@ -43,4 +43,4 @@ interface ViewTransition {
     skipTransition(): void;
 }
 
-export type StartViewTransition = (id: string, performTransition: () => ViewTransition) => void
+export type StartViewTransition = (id: string, performTransition: () => void) => ViewTransition
