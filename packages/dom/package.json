@@ -1,14 +1,21 @@
 {
   "name": "@routersaurus/dom",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "private": false,
+  "files": [
+    "dist/**/*"
+  ],
   "dependencies": {
-    "typescript": "5.2.2",
+    "typescript": "5.2.2"
+  },
+  "devDependencies": {
     "@routersaurus/types": "*"
   },
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts"
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "publish": "yarn publish --version `node -e \"console.log(require('../../package.json').version);\"`"
   }
 }
