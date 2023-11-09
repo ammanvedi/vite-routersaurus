@@ -1,6 +1,6 @@
 {
   "name": "@routersaurus/dom",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -15,6 +15,8 @@
     "@routersaurus/types": "*"
   },
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts"
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "example": "turbo run publish:package --scope @routersaurus/dom -- --otp 064252",
+    "publish:package": "yarn publish --new-version `node -e \"console.log(require('../../package.json').version);\"` --non-interactive "
   }
 }
