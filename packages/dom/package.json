@@ -1,0 +1,14 @@
+{
+  "name": "@routersaurus/dom",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "dependencies": {
+    "typescript": "5.2.2",
+    "@routersaurus/types": "*"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts"
+  }
+}

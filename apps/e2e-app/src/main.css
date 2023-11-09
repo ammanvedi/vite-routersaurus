@@ -1,0 +1,10 @@
+/*::view-transition-old(root),*/
+/*::view-transition-new(root) {*/
+/*    animation: none;*/
+/*}*/
+
+h1 {
+    margin: 0;
+    font-size: 30px;
+    width: fit-content;
+}

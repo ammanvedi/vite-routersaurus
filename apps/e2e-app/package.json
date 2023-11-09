@@ -1,0 +1,31 @@
+{
+  "name": "e2e-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve-build": "npx pm2 --name E2ESERVE start npx -- http-server ./dist -p 8008"
+  },
+  "dependencies": {
+    "@routersaurus/dom": "*",
+    "@routersaurus/plugin-react-router": "*",
+    "@routersaurus/plugin-vite": "*",
+    "react": "^18.2.0",
+    "react-router-dom": "^6.18.0",
+    "styled-components": "^6.1.1",
+    "vite": "^4.5.0"
+  },
+  "devDependencies": {
+    "@mdx-js/rollup": "^3.0.0",
+    "@types/node": "^17.0.12",
+    "@types/react": "^18.0.22",
+    "@types/react-dom": "^18.0.7",
+    "@vitejs/plugin-react-swc": "^3.4.1",
+    "eslint-config-custom": "*",
+    "http-server": "^14.1.1",
+    "remark-frontmatter": "^5.0.0",
+    "tsconfig": "*",
+    "typescript": "5.2.2"
+  }
+}

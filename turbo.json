@@ -4,7 +4,13 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": ["dist/**"]
+    },
+    "serve-build": {
+      "dependsOn": ["build"]
+    },
+    "e2e#test": {
+      "dependsOn": ["e2e-app#serve-build"]
     },
     "lint": {},
     "dev": {
