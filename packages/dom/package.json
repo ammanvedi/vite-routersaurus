@@ -1,6 +1,6 @@
 {
   "name": "@routersaurus/dom",
-  "version": "1.0.6",
+  "version": "0.4.6",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -15,7 +15,6 @@
     "@routersaurus/types": "*"
   },
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts",
-    "publish": "yarn publish --version `node -e \"console.log(require('../../package.json').version);\"`"
+    "build": "tsup src/index.ts --format cjs,esm --dts"
   }
 }
