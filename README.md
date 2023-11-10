@@ -61,9 +61,10 @@ export default defineConfig({
 ```
 my-app/
 ├─ src/
-│  ├─ posts/
-│  │  ├─ my-blog-post.tsx
-│  ├─ index.tsx
+│  ├─ pages/
+│  │  ├─ posts/
+│  │  │  ├─ my-blog-post.tsx
+│  │  ├─ index.tsx
 ```
 
 ## Integrate With React Router
@@ -221,10 +222,11 @@ You can create a `_loader.tsx` component in any directory
 ```
 my-app/
 ├─ src/
-│  ├─ posts/
-│  │  ├─ my-blog-post.tsx
-│  │  ├─ _loader.tsx
-│  ├─ index.tsx
+│  ├─ pages/
+│  │  ├─ posts/
+│  │  │  ├─ my-blog-post.tsx
+│  │  │  ├─ _loader.tsx
+│  │  ├─ index.tsx
 ```
 
 ```javascript
@@ -254,11 +256,12 @@ Layouts can be nested
 ```
 my-app/
 ├─ src/
-│  ├─ posts/
-│  │  ├─ my-blog-post.tsx
-│  │  ├─ _loader.tsx
-│  ├─ index.tsx
-│  ├─ _layout.tsx
+│  ├─ pages/
+│  │  ├─ posts/
+│  │  │  ├─ my-blog-post.tsx
+│  │  │  ├─ _loader.tsx
+│  │  ├─ index.tsx
+│  │  ├─ _layout.tsx
 ```
 
 ```javascript
@@ -285,13 +288,14 @@ ones above them in the tree
 ```
 my-app/
 ├─ src/
-│  ├─ posts/
-│  │  ├─ my-blog-post.tsx
-│  │  ├─ _loader.tsx
+│  ├─ pages/
+│  │  ├─ posts/
+│  │  │  ├─ my-blog-post.tsx
+│  │  │  ├─ _loader.tsx
+│  │  │  ├─ _404.tsx
+│  │  ├─ index.tsx
+│  │  ├─ _layout.tsx
 │  │  ├─ _404.tsx
-│  ├─ index.tsx
-│  ├─ _layout.tsx
-│  ├─ _404.tsx
 ```
 
 ```javascript
@@ -407,8 +411,6 @@ export default function Posts() {
     )
 }
 ```
-
-
 
 # Contribution
 
