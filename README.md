@@ -1,9 +1,23 @@
 
 
-<img width="300" style="display:block; margin: 0 auto;" src="./assets/dino.png" />
+<div align="center">
+    <img width="400" src="./assets/dino.png" />
+    <br />
 
-# Routersaurus
-Routersaurus is a ViteJS plugin for file based routing, it comes with a few features
+</div>
+
+<div align="center">
+    <br />
+    <div>
+        <img src="https://img.shields.io/github/actions/workflow/status/ammanvedi/vite-routersaurus/build-test.yml" />
+        <img src="https://img.shields.io/npm/v/%40routersaurus/dom?color=blue" />
+    </div>
+</div>
+
+
+
+
+**Routersaurus** is a ViteJS plugin for file based routing, it comes with a few features
 
 
 - File based routing

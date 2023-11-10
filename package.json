@@ -1,5 +1,7 @@
 {
   "private": true,
+  "repository": "https://github.com/ammanvedi/vite-routersaurus",
+  "author": "amman.vedi@gmail.com",
   "version": "0.4.17",
   "scripts": {
     "build": "turbo run build",
