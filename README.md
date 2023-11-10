@@ -1,3 +1,7 @@
+
+
+<img width="300" style="display:block; margin: 0 auto;" src="./assets/dino.png" />
+
 # Routersaurus
 Routersaurus is a ViteJS plugin for file based routing, it comes with a few features
 
