@@ -36,6 +36,7 @@ yarn-error.log*
 .vercel
 
 dist/
+.idea
 .idea/.gitignore
 .idea/modules.xml
 .idea/vite-routersaurus.iml
