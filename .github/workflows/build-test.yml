@@ -7,7 +7,7 @@ on:
     branches:
       - main
 jobs:
-  Explore-GitHub-Actions:
+  BuildTest:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
