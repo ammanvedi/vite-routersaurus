@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: "<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease"
+        description: "major | minor | patch | premajor | preminor | prepatch | prerelease"
         required: true
 jobs:
   Release-To-NPM:
@@ -25,7 +25,7 @@ jobs:
           git config --global user.name 'Release Workflow'
           git config --global user.email 'release-workflow@users.noreply.github.com'
           echo "Incrementing version"
-          yarn version ${{ github.event.inputs.version }}
+          yarn version --${{ github.event.inputs.version }}
           echo "Pushing Version Change"
           git push --follow-tags
           echo "Publishing to NPM"
