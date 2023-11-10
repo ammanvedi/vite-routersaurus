@@ -3,8 +3,10 @@
   "version": "0.4.16",
   "scripts": {
     "build": "turbo run build",
+    "test": "turbo run test",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
+    "publish:packages": "turbo run publish:package",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {

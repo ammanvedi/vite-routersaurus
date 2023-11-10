@@ -41,3 +41,5 @@ dist/
 .idea/vite-routersaurus.iml
 
 vite.config.mts.timestamp-*
+
+log.txt
